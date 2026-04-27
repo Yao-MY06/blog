@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>姚梓铭 — 项目驱动的人生OS</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="#hero">姚梓铭</a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#overview" class="nav-link">系统概览</a></li>
+        <li><a href="#architecture" class="nav-link">五层架构</a></li>
+        <li><a href="#para" class="nav-link">PARA</a></li>
+        <li><a href="#quickstart" class="nav-link">快速启动</a></li>
+        <li><a href="#principles" class="nav-link">铁律</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">个人管理系统 2.0</h1>
+      <p class="hero-subtitle">项目驱动的人生OS —— 把"想学"变成"做完"再变成"能卖钱"</p>
+      <div class="hero-meta">
+        <span class="badge">大二 · 全栈方向</span>
+        <span class="badge">PARA方法论</span>
+        <span class="badge">时间块管理</span>
+      </div>
+      <a href="#overview" class="hero-cta">开始阅读</a>
+    </div>
+    <div class="scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- 系统概览 -->
+  <section class="section section-light" id="overview">
+    <div class="container">
+      <h2 class="section-title reveal">系统概览</h2>
+      <p class="section-desc reveal">这是一套为大二技术方向学生设计的<strong>个人操作系统</strong>。它不是一堆待办清单，而是一套让输入→处理→输出→反馈自动运转的生产力引擎。</p>
+
+      <div class="grid grid-3">
+        <div class="card card-accent-blue reveal">
+          <div class="card-icon">📥</div>
+          <h3>这是什么</h3>
+          <p>基于 <strong>PARA 方法论</strong> + <strong>项目驱动学习</strong> + <strong>时间块管理</strong> + <strong>变现验证</strong> 的个人操作系统。</p>
+          <blockquote>"会做项目≠能赚钱。每个项目在立项前必须回答：谁需要这个？他们现在怎么解决？我能收多少钱？"</blockquote>
+        </div>
+        <div class="card card-accent-orange reveal">
+          <div class="card-icon">🎯</div>
+          <h3>为谁设计</h3>
+          <ul>
+            <li>大二计算机/技术方向学生，有觉醒焦虑</li>
+            <li>想学全栈、AI、建模、动画……目标过载</li>
+            <li>核心症状：拖延、娱乐依赖、无法专注、没有正反馈</li>
+          </ul>
+        </div>
+        <div class="card card-accent-green reveal">
+          <div class="card-icon">💊</div>
+          <h3>解决什么问题</h3>
+          <ul>
+            <li><strong>收藏夹吃灰</strong> → 项目驱动，每个学习必须有交付物</li>
+            <li><strong>B站一刷三小时</strong> → 物理约束：屏蔽+隔离+环境控制</li>
+            <li><strong>AI代劳作业</strong> → 先手写30分钟，再看AI输出</li>
+            <li><strong>学了就忘</strong> → GitHub绿墙+每周博客+番茄钟计数</li>
+            <li><strong>做了一堆项目，一分钱没赚到</strong> → 变现三问强制验证</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 五层架构 -->
+  <section class="section section-dark" id="architecture">
+    <div class="container">
+      <h2 class="section-title reveal">五层OS架构</h2>
+      <p class="section-desc reveal">输入 → 处理 → 输出 → 变现 → 反馈，形成闭环。</p>
+
+      <div class="architecture-flow reveal">
+        <div class="flow-layer flow-input">
+          <div class="flow-header">
+            <span class="flow-dot"></span>
+            <h3>输入层 — 控制信息流</h3>
+          </div>
+          <div class="flow-items">
+            <span class="flow-tag">课程作业<br><small>00-收件箱</small></span>
+            <span class="flow-tag">技术博客/推文<br><small>RSS+稍后读</small></span>
+            <span class="flow-tag">项目灵感<br><small>随时记入收件箱</small></span>
+            <span class="flow-tag">被动娱乐<br><small>B站/游戏 → 严格限制</small></span>
+          </div>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-layer flow-process">
+          <div class="flow-header">
+            <span class="flow-dot"></span>
+            <h3>处理层 — 转化为行动</h3>
+          </div>
+          <div class="flow-items">
+            <span class="flow-tag">每日回顾<br><small>01-日记与周期</small></span>
+            <span class="flow-tag">项目拆解<br><small>02-项目管理</small></span>
+            <span class="flow-tag">技能决策<br><small>03-领域与长期</small></span>
+            <span class="flow-tag">时间块规划<br><small>日历+番茄钟</small></span>
+          </div>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-layer flow-output">
+          <div class="flow-header">
+            <span class="flow-dot"></span>
+            <h3>输出层 — 可验证的交付物</h3>
+          </div>
+          <div class="flow-items">
+            <span class="flow-tag">GitHub提交<br><small>绿墙策略</small></span>
+            <span class="flow-tag">技术博客<br><small>每周一篇</small></span>
+            <span class="flow-tag">可演示项目<br><small>简历素材</small></span>
+            <span class="flow-tag">笔记卡片<br><small>04-知识笔记</small></span>
+          </div>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-layer flow-monetize">
+          <div class="flow-header">
+            <span class="flow-dot"></span>
+            <h3>变现层 — 市场验证与收入</h3>
+          </div>
+          <div class="flow-items">
+            <span class="flow-tag">变现三问<br><small>项目立项前必答</small></span>
+            <span class="flow-tag">技能变现地图<br><small>03-领域与长期</small></span>
+            <span class="flow-tag">机会捕获<br><small>06-机会捕获</small></span>
+            <span class="flow-tag">财务追踪<br><small>07-财务追踪</small></span>
+          </div>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-layer flow-feedback">
+          <div class="flow-header">
+            <span class="flow-dot"></span>
+            <h3>反馈层 — 驱动持续行动</h3>
+          </div>
+          <div class="flow-items">
+            <span class="flow-tag">GitHub绿墙可视化</span>
+            <span class="flow-tag">博客阅读量/评论</span>
+            <span class="flow-tag">番茄钟物理计数</span>
+            <span class="flow-tag">周回顾数据<br><small>01-日记与周期</small></span>
+            <span class="flow-tag">收入数据<br><small>07-财务追踪</small></span>
+          </div>
+        </div>
+
+        <div class="feedback-loop">
+          <span>↺ 反馈 → 输入（闭环驱动）</span>
+        </div>
+      </div>
+
+      <div class="monetize-why reveal">
+        <h3>为什么需要变现层？</h3>
+        <div class="code-block">
+          <p>没有变现层的系统会让你的技术学习变成<strong>自嗨循环</strong>：</p>
+          <pre>学React → 做没人用的待办应用 → 觉得不够酷 → 学Vue → 做没人用的天气应用
+     ↑                                                    |
+     └──────────────── 零收入，零验证，继续学下一个框架 ←──┘</pre>
+        </div>
+        <div class="grid grid-3">
+          <div class="mini-card">
+            <strong>立项前</strong>
+            <p>谁需要这个？</p>
+            <small>确认需求存在，不是想象中的需求</small>
+          </div>
+          <div class="mini-card">
+            <strong>开发中</strong>
+            <p>他们现在怎么解决？</p>
+            <small>了解竞品和替代方案，找到差异化</small>
+          </div>
+          <div class="mini-card">
+            <strong>交付后</strong>
+            <p>我能收多少钱？</p>
+            <small>明确变现路径：接单/求职/产品</small>
+          </div>
+        </div>
+        <p class="highlight-box">回答不了这三个问题的项目 = <strong>纯学习项目</strong>，限制投入时间（不超过总学习时间的30%）。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA -->
+  <section class="section section-light" id="para">
+    <div class="container">
+      <h2 class="section-title reveal">PARA 文件夹结构</h2>
+      <p class="section-desc reveal">五文件夹结构与五层OS的对应关系。</p>
+
+      <div class="para-grid reveal">
+        <div class="para-folder para-inbox">
+          <div class="para-header">
+            <span class="para-icon">📥</span>
+            <h3>00-收件箱</h3>
+            <span class="para-tag">输入层</span>
+          </div>
+          <p>临时捕获：想法、链接、截图、课程通知</p>
+          <div class="para-rule">核心规则：<strong>24小时内清空</strong>，不存放超过一天</div>
+        </div>
+        <div class="para-folder para-diary">
+          <div class="para-header">
+            <span class="para-icon">📓</span>
+            <h3>01-日记与周期</h3>
+            <span class="para-tag">处理层 + 反馈层</span>
+          </div>
+          <p>日回顾、周回顾、月回顾、博客草稿</p>
+          <div class="para-rule">核心规则：晚上固定时间写，不超过15分钟</div>
+        </div>
+        <div class="para-folder para-project">
+          <div class="para-header">
+            <span class="para-icon">🚀</span>
+            <h3>02-项目管理</h3>
+            <span class="para-tag">处理层</span>
+          </div>
+          <p>当前进行的项目规划、任务拆解、进度</p>
+          <div class="para-rule">核心规则：同时进行的项目 <strong>≤3个</strong></div>
+        </div>
+        <div class="para-folder para-area">
+          <div class="para-header">
+            <span class="para-icon">🗺️</span>
+            <h3>03-领域与长期</h3>
+            <span class="para-tag">处理层 + 变现层</span>
+          </div>
+          <p>技能路线图、技能决策矩阵、长期目标</p>
+          <div class="para-rule">核心规则：新技能必须通过决策矩阵评分（>15分才能立项）</div>
+        </div>
+        <div class="para-folder para-notes">
+          <div class="para-header">
+            <span class="para-icon">📝</span>
+            <h3>04-知识笔记</h3>
+            <span class="para-tag">输出层</span>
+          </div>
+          <p>经过加工的永久笔记、代码片段、概念卡片</p>
+          <div class="para-rule">核心规则：用自己的话重写，不是复制粘贴</div>
+        </div>
+        <div class="para-folder para-resource">
+          <div class="para-header">
+            <span class="para-icon">🧰</span>
+            <h3>05-资源库</h3>
+            <span class="para-tag">输入层</span>
+          </div>
+          <p>工具清单、模板、AI使用公约、配置备份</p>
+          <div class="para-rule">核心规则：配置变更后及时更新</div>
+        </div>
+        <div class="para-folder para-opportunity">
+          <div class="para-header">
+            <span class="para-icon">💰</span>
+            <h3>06-机会捕获</h3>
+            <span class="para-tag">变现层</span>
+          </div>
+          <p>赚钱线索：需求帖、外包单、产品灵感、行业趋势</p>
+          <div class="para-rule">核心规则：每条线索72小时内做变现三问评估</div>
+        </div>
+        <div class="para-folder para-finance">
+          <div class="para-header">
+            <span class="para-icon">📊</span>
+            <h3>07-财务追踪</h3>
+            <span class="para-tag">变现层 + 反馈层</span>
+          </div>
+          <p>收入/支出记录、报价模板、合同范本、客户反馈</p>
+          <div class="para-rule">核心规则：每笔交易后即时记录，每周对账，每月复盘</div>
+        </div>
+        <div class="para-folder para-archive">
+          <div class="para-header">
+            <span class="para-icon">🗄️</span>
+            <h3>Z-归档</h3>
+            <span class="para-tag">归档</span>
+          </div>
+          <p>完成的项目、过期的笔记、旧回顾</p>
+          <div class="para-rule">核心规则：归档时写 3 句话总结</div>
+        </div>
+      </div>
+
+      <div class="info-flow reveal">
+        <h3>信息流转规则</h3>
+        <div class="flow-diagram">
+          <div class="flow-node start">所有信息入口：<br><strong>00-收件箱</strong><br><small>（24小时内清空）</small></div>
+          <div class="flow-branches">
+            <div class="flow-branch">
+              <span class="branch-arrow">→</span>
+              <div class="branch-condition">actionable<br>+ 有明确截止日期</div>
+              <div class="branch-target">02-项目管理<br><small>关联具体项目</small></div>
+            </div>
+            <div class="flow-branch">
+              <span class="branch-arrow">→</span>
+              <div class="branch-condition">actionable<br>+ 无截止日期但重要</div>
+              <div class="branch-target">03-领域与长期<br><small>技能路线</small></div>
+            </div>
+            <div class="flow-branch">
+              <span class="branch-arrow">→</span>
+              <div class="branch-condition">有价值<br>但非行动</div>
+              <div class="branch-target">04-知识笔记<br><small>卡片化加工</small></div>
+            </div>
+            <div class="flow-branch">
+              <span class="branch-arrow">→</span>
+              <div class="branch-condition">工具/模板<br>/参考</div>
+              <div class="branch-target">05-资源库</div>
+            </div>
+            <div class="flow-branch">
+              <span class="branch-arrow">→</span>
+              <div class="branch-condition">赚钱线索/<br>需求/外包单</div>
+              <div class="branch-target">06-机会捕获<br><small>72小时内评估</small></div>
+            </div>
+            <div class="flow-branch">
+              <span class="branch-arrow">→</span>
+              <div class="branch-condition">收入/支出<br>/合同</div>
+              <div class="branch-target">07-财务追踪</div>
+            </div>
+            <div class="flow-branch">
+              <span class="branch-arrow">→</span>
+              <div class="branch-condition">垃圾/已完成<br>/过期</div>
+              <div class="branch-target">Z-归档<br><small>或删除</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 快速启动 -->
+  <section class="section section-accent" id="quickstart">
+    <div class="container">
+      <h2 class="section-title reveal">24小时快速启动清单</h2>
+      <p class="section-desc reveal">按时间块执行任务，状态自动保存。</p>
+
+      <div class="checklist-group reveal">
+        <div class="checklist-header">
+          <span class="checklist-time">🌙 今晚（30分钟）</span>
+          <span class="checklist-progress" data-group="tonight">0/4</span>
+        </div>
+        <div class="checklist-items">
+          <label class="check-item">
+            <input type="checkbox" data-group="tonight" data-id="t1">
+            <span class="check-mark"></span>
+            <span class="check-text">打开路由器管理后台，设置每晚 <strong>23:00-07:00</strong> 自动断网（手机+电脑）</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="tonight" data-id="t2">
+            <span class="check-mark"></span>
+            <span class="check-text">修改 hosts 文件，屏蔽 <code>bilibili.com</code>、<code>douyin.com</code>、<code>weibo.com</code></span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="tonight" data-id="t3">
+            <span class="check-mark"></span>
+            <span class="check-text">下载 Cold Turkey Blocker，配置白名单模式（只允许课程网站+文档站+GitHub）</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="tonight" data-id="t4">
+            <span class="check-mark"></span>
+            <span class="check-text">手机下载 Forest，设置 <strong>45 分钟</strong>专注模式</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="checklist-group reveal">
+        <div class="checklist-header">
+          <span class="checklist-time">☀️ 明早（起床后1小时）</span>
+          <span class="checklist-progress" data-group="morning">0/3</span>
+        </div>
+        <div class="checklist-items">
+          <label class="check-item">
+            <input type="checkbox" data-group="morning" data-id="m1">
+            <span class="check-mark"></span>
+            <span class="check-text">手机放在床上，人离开房间去图书馆（<strong>物理隔离</strong>）</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="morning" data-id="m2">
+            <span class="check-mark"></span>
+            <span class="check-text">在图书馆坐下后，打开日历创建今天的两个时间块：上午 3h 全栈学习 + 下午 2h 课程作业（先手写30分钟，再用AI优化）</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="morning" data-id="m3">
+            <span class="check-mark"></span>
+            <span class="check-text">打开番茄钟，设置目标：今天 <strong>8 个番茄钟</strong></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="checklist-group reveal">
+        <div class="checklist-header">
+          <span class="checklist-time">📅 明天白天</span>
+          <span class="checklist-progress" data-group="day">0/4</span>
+        </div>
+        <div class="checklist-items">
+          <label class="check-item">
+            <input type="checkbox" data-group="day" data-id="d1">
+            <span class="check-mark"></span>
+            <span class="check-text">创建 GitHub 仓库 <code>my-learning-journal</code>，初始化 README</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="day" data-id="d2">
+            <span class="check-mark"></span>
+            <span class="check-text">在本系统的 <code>02-项目管理</code> 下新建第一个项目文件：<code>个人主页v1.md</code></span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="day" data-id="d3">
+            <span class="check-mark"></span>
+            <span class="check-text">写第一段 HTML——不用看教程，<strong>直接写</strong>，卡住再看文档</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="day" data-id="d4">
+            <span class="check-mark"></span>
+            <span class="check-text">完成今天的学习后，在 <code>01-日记与周期</code> 写第一条日回顾</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="checklist-group reveal">
+        <div class="checklist-header">
+          <span class="checklist-time">🗓️ 本周日（1小时回顾）</span>
+          <span class="checklist-progress" data-group="sunday">0/4</span>
+        </div>
+        <div class="checklist-items">
+          <label class="check-item">
+            <input type="checkbox" data-group="sunday" data-id="s1">
+            <span class="check-mark"></span>
+            <span class="check-text">完成第一次周回顾（模板见 <code>01-日记与周期/周回顾模板.md</code>）</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="sunday" data-id="s2">
+            <span class="check-mark"></span>
+            <span class="check-text">检查 GitHub 绿墙：本周至少应该有 <strong>5 天</strong>有提交</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="sunday" data-id="s3">
+            <span class="check-mark"></span>
+            <span class="check-text">决定下周<strong>唯一的重点项目</strong>（只选一个）</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" data-group="sunday" data-id="s4">
+            <span class="check-mark"></span>
+            <span class="check-text">把本周学到的东西写成 <strong>300 字</strong>博客草稿（存在 <code>01-日记与周期/博客草稿.md</code>）</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 速查表 -->
+  <section class="section section-light" id="cheatsheet">
+    <div class="container">
+      <h2 class="section-title reveal">文件夹用途速查表</h2>
+      <div class="table-wrapper reveal">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>文件夹</th>
+              <th>存放内容</th>
+              <th>使用频率</th>
+              <th>核心规则</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>00-收件箱</code></td>
+              <td>临时想法、链接、截图、课程通知</td>
+              <td>每天多次</td>
+              <td><strong>24小时内清空</strong>，不存放超过一天</td>
+            </tr>
+            <tr>
+              <td><code>01-日记与周期</code></td>
+              <td>日回顾、周回顾、月回顾、博客草稿</td>
+              <td>每天</td>
+              <td>晚上固定时间写，不超过15分钟</td>
+            </tr>
+            <tr>
+              <td><code>02-项目管理</code></td>
+              <td>当前进行的项目规划、任务拆解、进度</td>
+              <td>每天</td>
+              <td>同时进行的项目 <strong>≤3个</strong></td>
+            </tr>
+            <tr>
+              <td><code>03-领域与长期</code></td>
+              <td>技能路线图、技能决策矩阵、长期目标</td>
+              <td>每周回顾时</td>
+              <td>任何新技能必须通过决策矩阵评分</td>
+            </tr>
+            <tr>
+              <td><code>04-知识笔记</code></td>
+              <td>经过加工的永久笔记、代码片段、概念卡片</td>
+              <td>学习后即时</td>
+              <td>用自己的话重写，不是复制粘贴</td>
+            </tr>
+            <tr>
+              <td><code>05-资源库</code></td>
+              <td>工具清单、模板、AI使用公约、配置备份</td>
+              <td>需要时查阅</td>
+              <td>配置变更后及时更新</td>
+            </tr>
+            <tr>
+              <td><code>06-机会捕获</code></td>
+              <td>赚钱线索：需求帖、外包单、产品灵感、行业趋势</td>
+              <td>每天刷10分钟</td>
+              <td>每条线索72小时内做变现三问评估</td>
+            </tr>
+            <tr>
+              <td><code>07-财务追踪</code></td>
+              <td>收入/支出记录、报价模板、合同范本、客户反馈</td>
+              <td>每笔交易后即时</td>
+              <td>每周对账，每月财务复盘</td>
+            </tr>
+            <tr>
+              <td><code>Z-归档</code></td>
+              <td>完成的项目、过期的笔记、旧回顾</td>
+              <td>每月</td>
+              <td>归档时写 3 句话总结</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 七大原则 -->
+  <section class="section section-dark" id="principles">
+    <div class="container">
+      <h2 class="section-title reveal">使用原则（铁律）</h2>
+      <p class="section-desc reveal">违反任何一条，系统效率至少下降50%。</p>
+
+      <div class="principles-grid">
+        <div class="principle-card reveal" data-num="01">
+          <div class="principle-num">01</div>
+          <h3>项目是学习的最小单位</h3>
+          <p>没有"学React"这种任务，只有<strong>"用React做一个待办应用，周三前能跑通"</strong>。</p>
+          <p>每个项目必须<strong>可演示、可放入简历</strong>。</p>
+        </div>
+
+        <div class="principle-card reveal" data-num="02">
+          <div class="principle-num">02</div>
+          <h3>同时进行的项目不超过3个</h3>
+          <p>你现在觉得能学十个，实际上一个都做不完。</p>
+          <p><strong>激进的优先级</strong>是第一生存法则。当前推荐：1个全栈项目 + 1个课程作业 + 1个恢复性活动。</p>
+        </div>
+
+        <div class="principle-card reveal" data-num="03">
+          <div class="principle-num">03</div>
+          <h3>先手写30分钟，再打开AI</h3>
+          <p>任何代码、任何作业、任何笔记——先用自己的脑子和手处理30分钟，然后再用AI辅助。</p>
+          <p><strong>AI是加速器，不是替身。</strong></p>
+        </div>
+
+        <div class="principle-card reveal" data-num="04">
+          <div class="principle-num">04</div>
+          <h3>晚上回顾比早上计划更重要</h3>
+          <p>每天花15分钟写回顾：今天做了什么、GitHub提交了吗、明天的唯一重点是什么。</p>
+          <p><strong>没有回顾的日子等于没有活过。</strong></p>
+        </div>
+
+        <div class="principle-card reveal" data-num="05">
+          <div class="principle-num">05</div>
+          <h3>物理约束 > 意志力</h3>
+          <p>别相信自己"这次会自律"。屏蔽B站、手机放远、去图书馆、用白噪音——</p>
+          <p><strong>让堕落变得困难，让执行变得容易。</strong></p>
+        </div>
+
+        <div class="principle-card highlight reveal" data-num="06">
+          <div class="principle-num">06</div>
+          <h3>回答不了变现三问的项目 = 纯学习项目</h3>
+          <div class="three-questions">
+            <div class="tq-item">
+              <span class="tq-label">Q1</span>
+              <strong>谁需要这个？</strong>
+              <small>目标用户是谁，不是"我觉得有人需要"</small>
+            </div>
+            <div class="tq-item">
+              <span class="tq-label">Q2</span>
+              <strong>他们现在怎么解决？</strong>
+              <small>竞品/替代品是什么</small>
+            </div>
+            <div class="tq-item">
+              <span class="tq-label">Q3</span>
+              <strong>我能收多少钱？</strong>
+              <small>接单定价/求职薪资/产品收入</small>
+            </div>
+          </div>
+          <p>回答不了 → 允许做，但<strong>限制投入时间≤总学习时间的30%</strong>，且不占用早晨7:00-8:30的黄金时间块。</p>
+        </div>
+
+        <div class="principle-card highlight reveal" data-num="07">
+          <div class="principle-num">07</div>
+          <h3>技术学习必须指向三种变现路径之一</h3>
+          <div class="paths">
+            <div class="path-card">
+              <strong>💼 接单</strong>
+              <p>能独立完成小型项目后</p>
+              <small>猪八戒/码市/朋友推荐，从500元小单开始</small>
+            </div>
+            <div class="path-card">
+              <strong>🎯 求职</strong>
+              <p>有2-3个作品集项目后</p>
+              <small>投递实习/校招，薪资是能力的市场定价</small>
+            </div>
+            <div class="path-card">
+              <strong>🚀 产品</strong>
+              <p>发现真实需求且有能力解决</p>
+              <small>小工具/SaaS/付费模板，独立收费</small>
+            </div>
+          </div>
+          <p class="deadline"><strong>大三上学期结束时，你必须已经赚到第一笔技术收入（哪怕是100元的外快）。</strong></p>
+        </div>
+      </div>
+
+      <blockquote class="final-quote reveal">
+        <p>"你不是没时间，你是没优先级。你不是懒，你是没系统。你不是在学技术，你是在学赚钱的手段——<strong>别假装自己在搞艺术。</strong>"</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>姚梓铭 — 大二学生，正在死磕全栈开发。</p>
+      <p>本系统基于 PARA 方法论 + 项目驱动学习构建。</p>
+      <p class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub（稍后更新）</a>
+        <span>·</span>
+        <a href="#hero">返回顶部</a>
+      </p>
+      <p class="footer-copy">最后更新：2026年4月</p>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
