@@ -22,7 +22,22 @@ const postsCollection = defineCollection({
 const specCollection = defineCollection({
 	schema: z.object({}),
 });
+const projectsCollection = defineCollection({
+	schema: z.object({
+		name: z.string(),
+		description: z.string().optional().default(""),
+		tags: z.array(z.string()).optional().default([]),
+		status: z.string(), // 进行中 / 规划中 / 已完成（兼容：开发中 / 已上线）
+		url: z.string().optional().default(""),
+		repo: z.string().optional().default(""),
+		highlight: z.boolean().optional().default(false),
+		cover: z.string().optional().default(""),
+		order: z.number().optional().default(99),
+		published: z.boolean().optional().default(true), // false = 草稿，生产构建不收录
+	}),
+});
 export const collections = {
 	posts: postsCollection,
 	spec: specCollection,
+	projects: projectsCollection,
 };

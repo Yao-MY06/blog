@@ -25,6 +25,15 @@ pnpm new-post     # 手动新建文章
 
 **安全约定**：白名单制——只有显式列入 `publish-whitelist.json` 的文件才会被发布，密码、日记、财务、健康、关系等目录永远不会进入管道。
 
+## 新增一个项目
+
+1. 复制 `src/content/projects/_template.md` 为 `英文-slug.md`
+2. 填写 frontmatter（name / description / tags / status / url / repo / order）
+3. 把 `published` 改为 `true`（`false` 或缺省视为草稿，生产构建不收录）
+4. push 即上线
+
+`status` 拼错（未命中 进行中 / 规划中 / 已完成 分组）不会导致构建失败，但构建日志会出现 `[projects] status 未命中分组` 警告，且该项目不会显示。
+
 ## 站点结构
 
 | 路由 | 页面 | 内容来源 |
@@ -32,9 +41,8 @@ pnpm new-post     # 手动新建文章
 | `/` | 首页文章流 | `src/content/posts/` |
 | `/archive/` | 归档 + 分类/标签筛选 | 自动 |
 | `/posts/<slug>/` | 文章详情 | 同步产物 |
-| `/projects/` | 项目展示 | `src/pages/projects.astro` 内联数据 |
+| `/projects/` | 项目展示 | `src/content/projects/` |
 | `/now/` | 近况（每月更新） | `src/content/spec/now.md` |
-| `/uses/` | 装备清单 | `src/content/spec/uses.md` |
 | `/about/` | 关于 | `src/content/spec/about.md` |
 
 ## 站点配置
@@ -57,6 +65,6 @@ pnpm new-post     # 手动新建文章
 - 主题色固定 hue 210，隐藏访客调色板；无横幅；TOC 深度 3
 - 修复上游快照样式入口缺失（GlobalStyles 引入全部样式文件）
 - CJK 阅读时长统计（中文 400 字/分钟，修正原版按英文分词严重偏小的问题）
-- 新增 /projects /now /uses 三页 + 导航六项
+- 新增 /projects /now 两页 + 404 页 + 首页统计条 + 导航五项
 - Footer / 搜索框中文化
 - Obsidian 同步脚本 + 白名单 + 部署流水线（见上）

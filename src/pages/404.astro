@@ -1,0 +1,15 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { url } from "../utils/url-utils";
+---
+<MainGridLayout title="404">
+    <div class="card-base p-6 md:px-9 md:py-7 onload-animation text-center">
+        <div class="font-bold text-6xl text-[var(--primary)] mb-2">404</div>
+        <p class="text-75 mb-1">这一页不存在。</p>
+        <p class="text-50 text-sm mb-6">可能是链接打错了，也可能是文章还没发布。</p>
+        <div class="flex justify-center gap-3">
+            <a href={url("/")} class="btn-regular rounded-xl px-4 py-2 font-bold">回首页</a>
+            <a href={url("/archive/")} class="btn-regular rounded-xl px-4 py-2 font-bold">去归档</a>
+        </div>
+    </div>
+</MainGridLayout>

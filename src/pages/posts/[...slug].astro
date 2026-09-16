@@ -1,5 +1,6 @@
 ---
 import path from "node:path";
+import { getCollection } from "astro:content";
 import License from "@components/misc/License.astro";
 import Markdown from "@components/misc/Markdown.astro";
 import I18nKey from "@i18n/i18nKey";
@@ -11,7 +12,7 @@ import { Icon } from "astro-icon/components";
 import { licenseConfig } from "src/config";
 import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import PostMetadata from "../../components/PostMeta.astro";
-import { profileConfig, siteConfig } from "../../config";
+import { giscusConfig, profileConfig, siteConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
 
 export async function getStaticPaths() {
@@ -26,6 +27,22 @@ const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
 
 const { remarkPluginFrontmatter } = await entry.render();
+
+// 文章页相关文章：与当前文章 tags 有交集的前 4 篇（排除自身，发布日期倒序），无匹配不渲染
+const allPosts = await getCollection("posts", ({ data }) =>
+	import.meta.env.PROD ? data.draft !== true : true,
+);
+const relatedPosts = allPosts
+	.filter(
+		(p) =>
+			p.slug !== entry.slug &&
+			p.data.tags.some((t) => entry.data.tags.includes(t)),
+	)
+	.sort(
+		(a, b) =>
+			new Date(b.data.published).getTime() - new Date(a.data.published).getTime(),
+	)
+	.slice(0, 4);
 
 const jsonLd = {
 	"@context": "https://schema.org",
@@ -110,6 +127,56 @@ const jsonLd = {
 
         </div>
     </div>
+
+    {relatedPosts.length > 0 && (
+        <div class="card-base p-6 md:px-9 mb-4 onload-animation">
+            <div class="flex items-baseline gap-2 flex-wrap">
+                <span class="text-sm text-50 shrink-0">相关文章</span>
+                {relatedPosts.map((r) => (
+                    <a href={getPostUrlBySlug(r.slug)}
+                       class="text-sm text-75 transition hover:text-[var(--primary)]">{r.data.title}</a>
+                ))}
+            </div>
+        </div>
+    )}
+
+    {giscusConfig.enable && (
+        <div class="card-base p-6 md:px-9 mb-4 onload-animation">
+            <div id="giscus-container"></div>
+            <script is:inline define:vars={{ giscusConfig }}>
+                function loadGiscus() {
+                    const theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+                    const s = document.createElement("script");
+                    s.src = "https://giscus.app/client.js";
+                    s.setAttribute("data-repo", giscusConfig.repo);
+                    s.setAttribute("data-repo-id", giscusConfig.repoId);
+                    s.setAttribute("data-category", giscusConfig.category);
+                    s.setAttribute("data-category-id", giscusConfig.categoryId);
+                    s.setAttribute("data-mapping", "pathname");
+                    s.setAttribute("data-strict", "0");
+                    s.setAttribute("data-reactions-enabled", "1");
+                    s.setAttribute("data-emit-metadata", "0");
+                    s.setAttribute("data-input-position", "top");
+                    s.setAttribute("data-theme", theme);
+                    s.setAttribute("data-lang", "zh-CN");
+                    s.crossOrigin = "anonymous";
+                    s.async = true;
+                    const c = document.getElementById("giscus-container");
+                    if (c) { c.innerHTML = ""; c.appendChild(s); }
+                }
+                loadGiscus();
+                // swup 切页后重挂评论区（事件名若与 swup 版本不匹配，可退化为仅首次加载）
+                document.addEventListener("swup:content:replace", loadGiscus);
+                // 跟随站点暗色模式切换 giscus 主题
+                new MutationObserver(() => {
+                    const theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+                    const iframe = document.querySelector("iframe.giscus-frame");
+                    iframe?.contentWindow?.postMessage(
+                        { giscus: { setConfig: { theme } } }, "https://giscus.app");
+                }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+            </script>
+        </div>
+    )}
 
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
         <a href={entry.data.nextSlug ? getPostUrlBySlug(entry.data.nextSlug) : "#"}

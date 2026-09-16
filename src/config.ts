@@ -1,5 +1,6 @@
 import type {
 	ExpressiveCodeConfig,
+	GiscusConfig,
 	LicenseConfig,
 	NavBarConfig,
 	ProfileConfig,
@@ -51,10 +52,6 @@ export const navBarConfig: NavBarConfig = {
 			name: "近况",
 			url: "/now/",
 		},
-		{
-			name: "装备",
-			url: "/uses/",
-		},
 		LinkPreset.About,
 	],
 };
@@ -82,4 +79,12 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
+};
+
+export const giscusConfig: GiscusConfig = {
+	enable: false, // 完成仓库侧配置后改 true
+	repo: "Yao-MY06/blog",
+	repoId: "", // 在 https://giscus.app 生成
+	category: "Announcements",
+	categoryId: "",
 };
