@@ -1,0 +1,39 @@
+---
+import { Icon } from "astro-icon/components";
+import { getCategoryList } from "../utils/content-utils";
+import { getCategoryUrl, url } from "../utils/url-utils";
+
+// 板块元数据：顺序即展示顺序；name 必须与 posts frontmatter 的 category 完全一致
+// url 字段可选：覆盖默认的分类过滤链接（如「复盘」指向时间线页）
+const SECTIONS: Array<{ name: string; icon: string; desc: string; url?: string }> = [
+	{ name: "复盘", icon: "material-symbols:history-rounded", desc: "每周复盘，时间线记录", url: "/retro/" },
+	{ name: "领域与长期", icon: "material-symbols:flag-rounded", desc: "个人原则、领域与路线图" },
+	{ name: "健康追踪", icon: "material-symbols:monitor-heart-rounded", desc: "体重 / 睡眠 / 运动数据" },
+	{ name: "机会捕获", icon: "material-symbols:radar", desc: "变现机会看板" },
+	{ name: "教程", icon: "material-symbols:school-rounded", desc: "可复现的实操教程" },
+	{ name: "技术博客", icon: "material-symbols:code-rounded", desc: "技术踩坑与笔记" },
+	{ name: "学习方法", icon: "material-symbols:psychology-rounded", desc: "方法论与 SOP" },
+	{ name: "主题研究", icon: "material-symbols:explore-rounded", desc: "研究工作区产出" },
+];
+
+const counts = new Map((await getCategoryList()).map((c) => [c.name, c.count]));
+---
+<div class="card-base p-6 md:px-9 md:py-7 mb-4 onload-animation">
+    <div class="flex items-baseline justify-between mb-4">
+        <h2 class="font-bold text-xl text-90">板块</h2>
+        <a href={url("/archive/")} class="text-sm text-50 transition hover:text-[var(--primary)]">全部文章 →</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        {SECTIONS.map((s) => (
+            <a href={s.url ? url(s.url) : getCategoryUrl(s.name)}
+               class="btn-regular rounded-xl p-3 flex flex-col gap-1 items-start">
+                <div class="flex items-center gap-2 w-full">
+                    <Icon name={s.icon} class="text-xl text-[var(--primary)]" />
+                    <span class="font-bold text-75">{s.name}</span>
+                    <span class="ml-auto text-sm font-bold text-[var(--btn-content)]">{counts.get(s.name) ?? 0}</span>
+                </div>
+                <span class="text-xs text-50">{s.desc}</span>
+            </a>
+        ))}
+    </div>
+</div>

@@ -6,6 +6,12 @@ description: 我现在正在做什么
 
 > 灵感来自 [nownownow.com](https://nownownow.com)。每月更新一次。
 
+## 当前焦点
+
+- **本月主线**：Java 后端路线 —— Spring Boot 阶段
+- **正在攻坚**：微服务高并发交易平台（唯一 P0）
+- **最近一篇复盘**：[2026-W21 周复盘](/blog/posts/retro-2026-w21/)
+
 ## 学习（2026 年 9 月）
 
 - **正在学**：Java 后端路线 —— JavaSE 打底完成后，推进 JavaWeb / Spring Boot

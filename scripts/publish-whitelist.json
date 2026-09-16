@@ -417,6 +417,265 @@
       ],
       "description": "面向 AI 时代的方法论知识库结构设计。",
       "published": "2026-09-16"
+    },
+    {
+      "src": "01-日记与周期/周复盘/2026-W21-周复盘.md",
+      "slug": "retro-2026-w21",
+      "title": "2026-W21 周复盘（2026-05-18 ~ 2026-05-24）",
+      "category": "复盘",
+      "tags": [
+        "周复盘"
+      ],
+      "description": "用数据对抗自欺的一周回顾：完成、卡点与下周方向。",
+      "published": "2026-05-24"
+    },
+    {
+      "src": "01-日记与周期/月度规划/2026-05-月度规划.md",
+      "slug": "monthly-2026-05",
+      "title": "2026 年 5 月月度规划",
+      "category": "复盘",
+      "tags": [
+        "月度规划"
+      ],
+      "description": "一个月的方向设定与资源分配记录。",
+      "published": "2026-05-01"
+    },
+    {
+      "src": "01-日记与周期/晨间日志/2026-06-04.md",
+      "slug": "journal-2026-06-04",
+      "title": "晨间日志 2026-06-04",
+      "category": "复盘",
+      "tags": [
+        "晨间日志"
+      ],
+      "description": "当日唯一目标与下一步行动。",
+      "published": "2026-06-04"
+    },
+    {
+      "src": "01-日记与周期/晨间日志/2026-06-23-晨间日志.md",
+      "slug": "journal-2026-06-23",
+      "title": "晨间日志 2026-06-23：HelloController 跑通日",
+      "category": "复盘",
+      "tags": [
+        "晨间日志",
+        "Spring Boot"
+      ],
+      "description": "检查开发环境，创建 Spring Boot 项目并跑通第一个接口。",
+      "published": "2026-06-23"
+    },
+    {
+      "src": "01-日记与周期/晨间日志/2026-06-24-晨间日志.md",
+      "slug": "journal-2026-06-24",
+      "title": "晨间日志 2026-06-24",
+      "category": "复盘",
+      "tags": [
+        "晨间日志"
+      ],
+      "description": "当日唯一目标与下一步行动。",
+      "published": "2026-06-24"
+    },
+    {
+      "src": "03-领域与长期/Java后端学习与投递路线图.md",
+      "slug": "java-backend-roadmap",
+      "title": "Java 后端学习与投递路线图",
+      "category": "领域与长期",
+      "tags": [
+        "Java",
+        "路线图"
+      ],
+      "description": "从 JavaSE 到微服务高并发交易平台的完整学习与求职路线。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/个人原则与生活系统.md",
+      "slug": "personal-principles",
+      "title": "个人原则与生活系统",
+      "category": "领域与长期",
+      "tags": [
+        "个人管理"
+      ],
+      "description": "作息、专注与恢复的执行原则。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/全栈学习路线图.md",
+      "slug": "fullstack-roadmap",
+      "title": "全栈学习路线图",
+      "category": "领域与长期",
+      "tags": [
+        "路线图",
+        "全栈"
+      ],
+      "description": "前后端全栈技能树与阶段目标。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/博客个人网站规划.md",
+      "slug": "blog-site-plan",
+      "title": "博客个人网站规划：数字分身与作品橱窗",
+      "category": "领域与长期",
+      "tags": [
+        "博客",
+        "规划"
+      ],
+      "description": "本站的设计文档：定位、页面架构与内容生产流程。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/学习输出与自媒体记录.md",
+      "slug": "content-output-record",
+      "title": "学习输出与自媒体记录",
+      "category": "领域与长期",
+      "tags": [
+        "输出"
+      ],
+      "description": "内容分发与渠道记录机制。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/技能决策矩阵.md",
+      "slug": "skill-decision-matrix",
+      "title": "技能决策矩阵",
+      "category": "领域与长期",
+      "tags": [
+        "决策"
+      ],
+      "description": "学什么、不学什么的判断框架。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/技能变现地图.md",
+      "slug": "skill-monetization-map",
+      "title": "技能变现地图",
+      "category": "领域与长期",
+      "tags": [
+        "变现"
+      ],
+      "description": "把技术换成钱的路径设计。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/杂学学习流程.md",
+      "slug": "misc-learning-flow",
+      "title": "杂学学习流程",
+      "category": "领域与长期",
+      "tags": [
+        "学习方法"
+      ],
+      "description": "非主线知识的最小成本摄入流程。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/领域维护检查表.md",
+      "slug": "area-maintenance-checklist",
+      "title": "领域维护检查表",
+      "category": "领域与长期",
+      "tags": [
+        "个人管理"
+      ],
+      "description": "长期领域的周期性维护清单。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/飞轮系统整合方案.md",
+      "slug": "flywheel-system",
+      "title": "飞轮系统整合方案",
+      "category": "领域与长期",
+      "tags": [
+        "个人管理",
+        "系统设计"
+      ],
+      "description": "学习-输出-变现飞轮的整体整合设计。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "06-机会捕获/定义与使用SOP.md",
+      "slug": "opportunity-sop",
+      "title": "机会捕获：赚钱线索的渔网",
+      "category": "机会捕获",
+      "tags": [
+        "SOP",
+        "变现"
+      ],
+      "description": "需求、合作与变现机会的捕获与判断流程。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "06-机会捕获/机会看板.md",
+      "slug": "opportunity-board",
+      "title": "机会看板",
+      "category": "机会捕获",
+      "tags": [
+        "看板"
+      ],
+      "description": "进行中的机会线索一览。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "09-主题研究/_主题研究SOP.md",
+      "slug": "topic-research-sop",
+      "title": "主题研究：定义与使用 SOP",
+      "category": "主题研究",
+      "tags": [
+        "SOP"
+      ],
+      "description": "需要多资料、多次实验时的临时研究工作区用法。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "10-健康追踪/体重体脂.md",
+      "slug": "health-weight",
+      "title": "体重体脂记录",
+      "category": "健康追踪",
+      "tags": [
+        "体重"
+      ],
+      "description": "30 秒记录体重体脂趋势，用于诊断与调整。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "10-健康追踪/睡眠记录.md",
+      "slug": "health-sleep",
+      "title": "睡眠记录",
+      "category": "健康追踪",
+      "tags": [
+        "睡眠"
+      ],
+      "description": "睡眠时长与质量的趋势记录。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "10-健康追踪/运动记录.md",
+      "slug": "health-exercise",
+      "title": "运动记录",
+      "category": "健康追踪",
+      "tags": [
+        "运动"
+      ],
+      "description": "训练日志。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "10-健康追踪/训练分化与动作表.md",
+      "slug": "health-workout-split",
+      "title": "训练分化与动作表",
+      "category": "健康追踪",
+      "tags": [
+        "训练"
+      ],
+      "description": "训练分化方案与动作库。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "10-健康追踪/定义与使用SOP.md",
+      "slug": "health-sop",
+      "title": "健康追踪：定义与使用 SOP",
+      "category": "健康追踪",
+      "tags": [
+        "SOP"
+      ],
+      "description": "健康数据的最小记录成本设计。",
+      "published": "2026-09-16"
     }
   ]
 }

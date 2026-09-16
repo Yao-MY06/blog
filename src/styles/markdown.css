@@ -112,6 +112,25 @@
 
     }
 
+    table {
+        @apply w-full my-4 text-sm;
+        display: block; /* 宽表格可横向滚动，不需要包裹 div */
+        overflow-x: auto;
+        border-collapse: collapse;
+    }
+    th, td {
+        @apply px-3 py-2 text-left whitespace-nowrap border border-black/10 dark:border-white/10;
+    }
+    thead th {
+        @apply font-bold bg-[var(--btn-regular-bg)];
+    }
+    tbody tr {
+        @apply transition-colors;
+        &:hover {
+            @apply bg-[var(--btn-plain-bg-hover)];
+        }
+    }
+
     .katex-display-container {
         max-width: 100%;
         overflow-x: auto;

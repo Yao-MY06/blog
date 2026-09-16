@@ -1,0 +1,49 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { getSortedPosts } from "../utils/content-utils";
+import { formatDateToYYYYMMDD } from "../utils/date-utils";
+import { getPostUrlBySlug } from "../utils/url-utils";
+
+const posts = (await getSortedPosts()).filter(
+	(p) => (p.data.category ?? "").trim() === "复盘",
+);
+
+function isoWeek(d: Date): number {
+	const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+	const dayNum = date.getUTCDay() || 7;
+	date.setUTCDate(date.getUTCDate() + 4 - dayNum);
+	const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+	return Math.ceil(((date.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
+}
+
+const byYear = new Map<number, typeof posts>();
+for (const p of posts) {
+	const y = new Date(p.data.published).getFullYear();
+	if (!byYear.has(y)) byYear.set(y, []);
+	byYear.get(y)!.push(p);
+}
+const years = [...byYear.keys()].sort((a, b) => b - a);
+---
+<MainGridLayout title="复盘" description="每周复盘时间线">
+    <div class="card-base p-6 md:px-9 md:py-7 onload-animation">
+        <h1 class="font-bold text-3xl text-90 mb-2">复盘</h1>
+        <p class="text-50 text-sm mb-6">共 {posts.length} 篇，按周递增。用数据对抗自欺。</p>
+        {years.map((y) => (
+            <section class="mb-8">
+                <h2 class="font-bold text-xl text-90 mb-3">{y}</h2>
+                <div class="flex flex-col border-l-2 border-[var(--btn-regular-bg)] pl-4 gap-2">
+                    {byYear.get(y)!.map((p) => (
+                        <a href={getPostUrlBySlug(p.slug)} class="group flex items-baseline gap-3">
+                            <span class="text-sm font-bold text-[var(--primary)] whitespace-nowrap">
+                                W{String(isoWeek(new Date(p.data.published))).padStart(2, "0")}
+                            </span>
+                            <span class="text-sm text-50">{formatDateToYYYYMMDD(new Date(p.data.published))}</span>
+                            <span class="text-75 transition group-hover:text-[var(--primary)]">{p.data.title}</span>
+                        </a>
+                    ))}
+                </div>
+            </section>
+        ))}
+        {posts.length === 0 && <p class="text-50">还没有复盘记录。</p>}
+    </div>
+</MainGridLayout>

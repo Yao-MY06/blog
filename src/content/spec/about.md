@@ -34,6 +34,21 @@ description: 我是谁，我在做什么
 
 学生身份 = 时间灵活 + 沟通直接 + 价格透明。有需求欢迎通过 [GitHub](https://github.com/Yao-MY06) 联系我，24 小时内回复。
 
+## 这个站点是什么
+
+这不只是一个博客，而是我的个人管理系统的公开层——我在 Obsidian 里记录和管理自己，定期把成果同步到这里。八大板块：
+
+| 板块 | 内容 |
+|---|---|
+| 复盘 | 每周复盘，时间线记录 |
+| 领域与长期 | 个人原则、领域与路线图 |
+| 健康追踪 | 体重 / 睡眠 / 运动数据 |
+| 机会捕获 | 变现机会看板 |
+| 教程 | 可复现的实操教程 |
+| 技术博客 | 技术踩坑与笔记 |
+| 学习方法 | 方法论与 SOP |
+| 主题研究 | 研究工作区产出 |
+
 ## 关于这个站
 
-本站使用 [Astro](https://astro.build) + [Fuwari](https://github.com/saicaca/fuwari) 构建，托管在 GitHub Pages 上。文章来自我的个人知识管理系统——先在 Obsidian 里沉淀，再脱敏整理后发布到这里。
+本站使用 [Astro](https://astro.build) + [Fuwari](https://github.com/saicaca/fuwari) 构建，托管在 GitHub Pages 上。文章来自我的个人知识管理系统——先在 Obsidian 里沉淀，再整理后通过白名单同步管线发布到这里。
