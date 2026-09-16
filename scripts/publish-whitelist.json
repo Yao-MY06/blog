@@ -441,40 +441,6 @@
       "published": "2026-05-01"
     },
     {
-      "src": "01-日记与周期/晨间日志/2026-06-04.md",
-      "slug": "journal-2026-06-04",
-      "title": "晨间日志 2026-06-04",
-      "category": "复盘",
-      "tags": [
-        "晨间日志"
-      ],
-      "description": "当日唯一目标与下一步行动。",
-      "published": "2026-06-04"
-    },
-    {
-      "src": "01-日记与周期/晨间日志/2026-06-23-晨间日志.md",
-      "slug": "journal-2026-06-23",
-      "title": "晨间日志 2026-06-23：HelloController 跑通日",
-      "category": "复盘",
-      "tags": [
-        "晨间日志",
-        "Spring Boot"
-      ],
-      "description": "检查开发环境，创建 Spring Boot 项目并跑通第一个接口。",
-      "published": "2026-06-23"
-    },
-    {
-      "src": "01-日记与周期/晨间日志/2026-06-24-晨间日志.md",
-      "slug": "journal-2026-06-24",
-      "title": "晨间日志 2026-06-24",
-      "category": "复盘",
-      "tags": [
-        "晨间日志"
-      ],
-      "description": "当日唯一目标与下一步行动。",
-      "published": "2026-06-24"
-    },
-    {
       "src": "03-领域与长期/Java后端学习与投递路线图.md",
       "slug": "java-backend-roadmap",
       "title": "Java 后端学习与投递路线图",
@@ -601,17 +567,6 @@
       "published": "2026-09-16"
     },
     {
-      "src": "06-机会捕获/机会看板.md",
-      "slug": "opportunity-board",
-      "title": "机会看板",
-      "category": "机会捕获",
-      "tags": [
-        "看板"
-      ],
-      "description": "进行中的机会线索一览。",
-      "published": "2026-09-16"
-    },
-    {
       "src": "09-主题研究/_主题研究SOP.md",
       "slug": "topic-research-sop",
       "title": "主题研究：定义与使用 SOP",
@@ -620,39 +575,6 @@
         "SOP"
       ],
       "description": "需要多资料、多次实验时的临时研究工作区用法。",
-      "published": "2026-09-16"
-    },
-    {
-      "src": "10-健康追踪/体重体脂.md",
-      "slug": "health-weight",
-      "title": "体重体脂记录",
-      "category": "健康追踪",
-      "tags": [
-        "体重"
-      ],
-      "description": "30 秒记录体重体脂趋势，用于诊断与调整。",
-      "published": "2026-09-16"
-    },
-    {
-      "src": "10-健康追踪/睡眠记录.md",
-      "slug": "health-sleep",
-      "title": "睡眠记录",
-      "category": "健康追踪",
-      "tags": [
-        "睡眠"
-      ],
-      "description": "睡眠时长与质量的趋势记录。",
-      "published": "2026-09-16"
-    },
-    {
-      "src": "10-健康追踪/运动记录.md",
-      "slug": "health-exercise",
-      "title": "运动记录",
-      "category": "健康追踪",
-      "tags": [
-        "运动"
-      ],
-      "description": "训练日志。",
       "published": "2026-09-16"
     },
     {
