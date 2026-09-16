@@ -419,28 +419,6 @@
       "published": "2026-09-16"
     },
     {
-      "src": "01-日记与周期/周复盘/2026-W21-周复盘.md",
-      "slug": "retro-2026-w21",
-      "title": "2026-W21 周复盘（2026-05-18 ~ 2026-05-24）",
-      "category": "复盘",
-      "tags": [
-        "周复盘"
-      ],
-      "description": "用数据对抗自欺的一周回顾：完成、卡点与下周方向。",
-      "published": "2026-05-24"
-    },
-    {
-      "src": "01-日记与周期/月度规划/2026-05-月度规划.md",
-      "slug": "monthly-2026-05",
-      "title": "2026 年 5 月月度规划",
-      "category": "复盘",
-      "tags": [
-        "月度规划"
-      ],
-      "description": "一个月的方向设定与资源分配记录。",
-      "published": "2026-05-01"
-    },
-    {
       "src": "03-领域与长期/Java后端学习与投递路线图.md",
       "slug": "java-backend-roadmap",
       "title": "Java 后端学习与投递路线图",
@@ -529,17 +507,6 @@
         "学习方法"
       ],
       "description": "非主线知识的最小成本摄入流程。",
-      "published": "2026-09-16"
-    },
-    {
-      "src": "03-领域与长期/领域维护检查表.md",
-      "slug": "area-maintenance-checklist",
-      "title": "领域维护检查表",
-      "category": "领域与长期",
-      "tags": [
-        "个人管理"
-      ],
-      "description": "长期领域的周期性维护清单。",
       "published": "2026-09-16"
     },
     {
