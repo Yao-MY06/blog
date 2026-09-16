@@ -1,0 +1,56 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+// 项目数据：完成后手动维护，与 02-项目管理 里的项目对齐
+const projects = [
+	{
+		name: "微服务高并发交易平台",
+		description:
+			"Spring Boot 微服务架构的高并发交易平台，覆盖服务拆分、缓存、消息队列与压测验收，目标是大厂实习级的完整作品。",
+		tags: ["Java", "Spring Boot", "MySQL", "Redis", "微服务"],
+		status: "开发中",
+		url: "",
+	},
+	{
+		name: "智能故障诊断与自动评测平台",
+		description:
+			"项目一验收后的下一个 P0：面向故障诊断场景的智能分析与自动评测平台。",
+		tags: ["规划中"],
+		status: "规划中",
+		url: "",
+	},
+	{
+		name: "个人博客（本站）",
+		description:
+			"基于 Astro + Fuwari 的个人博客，GitHub Pages 自动部署，与 Obsidian 个人管理系统打通的内容管线。",
+		tags: ["Astro", "TypeScript", "GitHub Actions"],
+		status: "已上线",
+		url: "https://github.com/Yao-MY06",
+	},
+];
+---
+<MainGridLayout title="项目" description="我在做什么，做得怎么样">
+    <div class="flex flex-col gap-4">
+        {projects.map((p) => (
+            <div class="card-base p-6 md:px-9 md:py-7 transition hover:drop-shadow-[0_4px_12px_rgba(0,0,0,0.08)]">
+                <div class="flex items-center gap-3 flex-wrap">
+                    {p.url ? (
+                        <a href={p.url} target="_blank" rel="noopener"
+                           class="transition inline-flex items-center gap-2 font-bold text-2xl text-90 hover:text-[var(--primary)]">
+                            {p.name}
+                        </a>
+                    ) : (
+                        <span class="font-bold text-2xl text-90">{p.name}</span>
+                    )}
+                    <span class="text-sm px-2 py-0.5 rounded-md bg-[var(--btn-regular-bg)] text-[var(--btn-content)]">{p.status}</span>
+                </div>
+                <p class="text-75 mt-3">{p.description}</p>
+                <div class="flex gap-2 mt-4 flex-wrap">
+                    {p.tags.map((t) => (
+                        <span class="text-sm px-2 py-0.5 rounded-md bg-[var(--btn-regular-bg)] text-[var(--btn-content)]">{t}</span>
+                    ))}
+                </div>
+            </div>
+        ))}
+    </div>
+</MainGridLayout>

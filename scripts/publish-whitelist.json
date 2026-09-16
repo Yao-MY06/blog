@@ -1,0 +1,422 @@
+{
+  "vault": "E:\\个人管理系统2.0",
+  "posts": [
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/_总览.md",
+      "slug": "manual-index",
+      "title": "Kimi-Agent 技术手册总览",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "目录"
+      ],
+      "description": "Java 后端 12 册技术手册的总目录与阅读路线。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/01-JavaWeb零基础详细教程.md",
+      "slug": "manual-01-javaweb",
+      "title": "JavaWeb 零基础详细教程：从只懂 Java 语法到能看懂 Spring Boot",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "JavaWeb"
+      ],
+      "description": "Kimi-Agent 技术手册第 01 册：Tomcat、HTTP、Servlet、JSON、Session/Cookie、JDBC、Maven，为 Spring Boot 打底。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/02-MySQL详细教程.md",
+      "slug": "manual-02-mysql",
+      "title": "MySQL 详细教程：从 DDL/DML/DQL 到后端项目实战",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "MySQL"
+      ],
+      "description": "Kimi-Agent 技术手册第 02 册：MySQL 从建库建表到多表查询与后端实战。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/03-JDBC与MyBatis详细教程.md",
+      "slug": "manual-03-jdbc-mybatis",
+      "title": "JDBC 与 MyBatis 详细教程：从手动 SQL 到映射框架",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "JDBC",
+        "MyBatis"
+      ],
+      "description": "Kimi-Agent 技术手册第 03 册：从裸 JDBC 的繁琐到 MyBatis 的映射与动态 SQL。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/04-SpringBoot详细教程.md",
+      "slug": "manual-04-springboot",
+      "title": "SpringBoot 详细教程",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Spring Boot"
+      ],
+      "description": "Kimi-Agent 技术手册第 04 册：从环境搭建到核心机制的完整 Spring Boot 教程，1548 行长文。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/05-SpringBoot学习地图与面试速查.md",
+      "slug": "manual-05-springboot-map",
+      "title": "SpringBoot 学习地图与面试速查",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "面试"
+      ],
+      "description": "Kimi-Agent 技术手册第 05 册：Spring Boot 知识地图与高频面试题速查。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/06-苍穹外卖式项目学习手册.md",
+      "slug": "manual-06-project-practice",
+      "title": "用「苍穹外卖」式项目学 JavaWeb 与 Spring Boot",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "项目实战"
+      ],
+      "description": "Kimi-Agent 技术手册第 06 册：以外卖业务为线索的实战学习路线。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/07-黑马点评式Redis学习手册.md",
+      "slug": "manual-07-redis",
+      "title": "用「黑马点评」式项目学 Redis：从缓存到秒杀到 Feed 流",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Redis"
+      ],
+      "description": "Kimi-Agent 技术手册第 07 册：缓存、秒杀、Feed 流等 Redis 核心场景。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/08-消息队列详细教程.md",
+      "slug": "manual-08-mq",
+      "title": "消息队列详细教程：用外卖/点评业务理解可靠异步",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "消息队列"
+      ],
+      "description": "Kimi-Agent 技术手册第 08 册：消息队列的核心模型与业务落地。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/09-SpringCloud详细教程.md",
+      "slug": "manual-09-springcloud",
+      "title": "Spring Cloud 详细教程：从单体到可控微服务",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Spring Cloud",
+        "微服务"
+      ],
+      "description": "Kimi-Agent 技术手册第 09 册：微服务拆分、注册发现、网关与配置中心。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/10-JUC并发编程手册.md",
+      "slug": "manual-10-juc",
+      "title": "JUC 并发编程手册：从线程安全到并发实战",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "并发编程"
+      ],
+      "description": "Kimi-Agent 技术手册第 10 册：线程安全、锁、线程池与 JUC 工具集。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/11-JVM入门与调优手册.md",
+      "slug": "manual-11-jvm",
+      "title": "JVM 入门与调优手册：内存、GC 与排查实战",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "JVM"
+      ],
+      "description": "Kimi-Agent 技术手册第 11 册：JVM 内存结构、垃圾回收与线上排查。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/12-开发工具命令速查.md",
+      "slug": "manual-12-commands",
+      "title": "开发工具命令速查：Git / Linux / Docker",
+      "category": "教程",
+      "tags": [
+        "Git",
+        "Linux",
+        "Docker"
+      ],
+      "description": "Kimi-Agent 技术手册第 12 册：日常开发高频命令速查表。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/01-项目准备与配置规范.md",
+      "slug": "practice-01-setup",
+      "title": "01 SpringBoot 项目准备、配置文件与开发规范",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 01 篇：工程初始化、配置文件与规范。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/02-部门管理CRUD.md",
+      "slug": "practice-02-dept-crud",
+      "title": "02 部门管理：列表、删除、新增、修改回显与修改",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 02 篇：完整的部门管理 CRUD。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/03-日志与多表查询.md",
+      "slug": "practice-03-log-multitable",
+      "title": "03 日志 Logback 与 MySQL 多表关系/多表查询",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "MySQL",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 03 篇：日志配置与多表查询。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/04-员工管理与异常统计.md",
+      "slug": "practice-04-emp-management",
+      "title": "04 员工管理：分页、条件查询、批量操作与全局异常",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 04 篇：员工管理全流程与全局异常处理。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/05-事务与文件上传OSS.md",
+      "slug": "practice-05-tx-oss",
+      "title": "05 事务管理、文件上传与 OSS、配置绑定优化",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "OSS",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 05 篇：事务、文件上传与对象存储。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/06-登录认证与FilterInterceptor.md",
+      "slug": "practice-06-auth",
+      "title": "06 登录认证：Cookie、Session、令牌、JWT、Filter 与 Interceptor",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "JWT",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 06 篇：认证体系与拦截器。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/07-AOP-SpringBoot原理-Maven高级.md",
+      "slug": "practice-07-aop-maven",
+      "title": "07 SpringAOP、SpringBoot 原理与 Maven 高级",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "AOP",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 07 篇：AOP、框架原理与 Maven 进阶。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Kimi-Agent技术手册/课程实操笔记/08-JDBC与MyBatis综合练习.md",
+      "slug": "practice-08-dao-practice",
+      "title": "08 综合练习：菜品 DAO 手把手",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "MyBatis",
+        "实操笔记"
+      ],
+      "description": "课程实操笔记第 08 篇：JDBC 与 MyBatis 综合落地。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/JavaSE/Java教程最终版总结.md",
+      "slug": "javase-summary",
+      "title": "Java 教程总结（最终版）",
+      "category": "教程",
+      "tags": [
+        "Java"
+      ],
+      "description": "JavaSE 核心知识点全景总结，955 行长文。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/JAVA前端/TypeScript技术手册.md",
+      "slug": "typescript-handbook",
+      "title": "TypeScript 技术手册（概念详解版）",
+      "category": "教程",
+      "tags": [
+        "TypeScript",
+        "前端"
+      ],
+      "description": "TypeScript 类型系统与核心概念详解。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/JAVA/Java后端/Maven后端详细教程.md",
+      "slug": "maven-tutorial",
+      "title": "Maven 后端开发详细教程（Spring Boot 前置）",
+      "category": "教程",
+      "tags": [
+        "Java",
+        "Maven"
+      ],
+      "description": "Maven 依赖管理、构建生命周期与多模块项目。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/AI使用公约.md",
+      "slug": "ai-usage-convention",
+      "title": "AI 使用公约",
+      "category": "学习方法",
+      "tags": [
+        "AI",
+        "效率工具"
+      ],
+      "description": "个人使用 AI 的边界与风险判断规则：什么能问、什么绝不能给。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/AI项目开发参考手册.md",
+      "slug": "ai-dev-reference",
+      "title": "AI 项目开发参考手册",
+      "category": "技术博客",
+      "tags": [
+        "AI",
+        "工程实践"
+      ],
+      "description": "用 AI 做项目开发时的 PRD、ADR、Prompt 与 Review 参考。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/数据库/自研SQL数据库调研报告.md",
+      "slug": "sql-db-research",
+      "title": "自己动手写一个 SQL 数据库：原理、教程与 GitHub 资源全景调研",
+      "category": "技术博客",
+      "tags": [
+        "数据库",
+        "调研"
+      ],
+      "description": "手写 SQL 数据库的原理拆解与开源资源全景图。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "05-资源库/工具清单与配置.md",
+      "slug": "tools-and-setup",
+      "title": "工具清单与配置：最小工具集，最大执行力",
+      "category": "学习方法",
+      "tags": [
+        "效率工具",
+        "自律"
+      ],
+      "description": "从番茄钟到手机隔离的真实效率工具配置方案。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "04-知识笔记/知识处理SOP.md",
+      "slug": "knowledge-processing-sop",
+      "title": "知识处理 SOP",
+      "category": "学习方法",
+      "tags": [
+        "知识管理"
+      ],
+      "description": "信息进入个人系统后的路由、压缩与沉淀流程。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "04-知识笔记/外部讨论摄入SOP.md",
+      "slug": "discussion-intake-sop",
+      "title": "外部讨论摄入 SOP",
+      "category": "学习方法",
+      "tags": [
+        "知识管理"
+      ],
+      "description": "如何把外部讨论转化为可复用的个人知识。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "04-知识笔记/卡片笔记写作法入门.md",
+      "slug": "zettelkasten-intro",
+      "title": "卡片笔记写作法入门（Zettelkasten 简化版）",
+      "category": "学习方法",
+      "tags": [
+        "笔记方法",
+        "Obsidian"
+      ],
+      "description": "建立可积累、可连接的个人知识网络。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "04-知识笔记/AI辅助概念深度学习法.md",
+      "slug": "ai-assisted-deep-learning",
+      "title": "AI 辅助概念深度学习法",
+      "category": "学习方法",
+      "tags": [
+        "学习方法",
+        "AI"
+      ],
+      "description": "用 AI 问答学透陌生概念并沉淀笔记的闭环方法。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/项目式编程学习法.md",
+      "slug": "project-based-learning",
+      "title": "项目式编程学习法",
+      "category": "学习方法",
+      "tags": [
+        "学习方法",
+        "编程"
+      ],
+      "description": "以项目为驱动的编程学习完整方法论。",
+      "published": "2026-09-16"
+    },
+    {
+      "src": "03-领域与长期/AI方法论知识库设计.md",
+      "slug": "ai-methodology-design",
+      "title": "AI 方法论知识库设计",
+      "category": "学习方法",
+      "tags": [
+        "AI",
+        "知识管理"
+      ],
+      "description": "面向 AI 时代的方法论知识库结构设计。",
+      "published": "2026-09-16"
+    }
+  ]
+}
